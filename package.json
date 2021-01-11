@@ -2,6 +2,7 @@
   "name": "project-vue-widget-npm",
   "version": "0.1.0",
   "private": true,
+  "description": "test npm package with custom element widget",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build"
@@ -15,6 +16,7 @@
     "@vue/cli-plugin-typescript": "~4.5.0",
     "@vue/cli-service": "~4.5.0",
     "typescript": "~3.9.3",
+    "vue-custom-element": "^3.2.14",
     "vue-template-compiler": "^2.6.11"
   }
 }
