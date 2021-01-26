@@ -1,11 +1,12 @@
 <template>
-	<div id="app">Widget</div>
+	<div id="app"><Widget></Widget></div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from "vue-property-decorator"
+import Widget from "@/components/widget.vue"
 
-@Component({})
+@Component({ components: { Widget } })
 export default class App extends Vue {}
 </script>
 
