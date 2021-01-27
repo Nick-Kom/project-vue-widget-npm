@@ -1,4 +1,4 @@
-import Widget from "./components/Widget.vue"
+import Widget from "./components/widget"
 
 // Declare install function executed by Vue.use()
 export function install(Vue) {

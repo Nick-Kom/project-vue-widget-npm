@@ -1,22 +1,27 @@
 {
 	"name": "project-vue-widget-npm",
-	"version": "0.2.0",
+	"version": "0.3.0",
 	"private": false,
 	"description": "test npm package with custom element widget",
 	"author": "Nick Kom",
 	"scripts": {
 		"serve": "vue-cli-service serve",
 		"build": "vue-cli-service build",
-		"lint": "vue-cli-service lint"
+		"lint": "vue-cli-service lint",
+		"build:package": "rollup -c --environment BUILD:production"
 	},
 	"main": "vue.config.js",
 	"dependencies": {
+		"@vue/compiler-sfc": "^3.0.5",
 		"babel-eslint": "^10.1.0",
 		"vue": "^2.6.11",
 		"vue-class-component": "^7.2.3",
 		"vue-property-decorator": "^9.1.2"
 	},
 	"devDependencies": {
+		"rollup": "2.38.0",
+		"rollup-plugin-typescript": "1.0.1",
+		"rollup-plugin-vue": "6.0.0",
 		"@typescript-eslint/eslint-plugin": "^2.33.0",
 		"@typescript-eslint/parser": "^2.33.0",
 		"@vue/cli-plugin-eslint": "^4.5.10",
