@@ -3,11 +3,20 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "vue-property-decorator"
 import Widget from "@/components/widget.vue"
+import { Component, Vue } from "vue-property-decorator"
+
+import { useModule } from "vuex-simple"
+import { ReviewsModule } from "@/store/reviews/reviews.module"
 
 @Component({ components: { Widget } })
-export default class App extends Vue {}
+export default class App extends Vue {
+	reviewsModule: ReviewsModule = useModule<ReviewsModule>(this.$store, ["reviewsModule"]) as ReviewsModule
+
+	mounted() {
+		this.reviewsModule.getReviewsInfo()
+	}
+}
 </script>
 
 <style>
