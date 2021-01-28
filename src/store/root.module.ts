@@ -1,4 +1,4 @@
-import { Action, Getter, Module, Mutation, State } from "vuex-simple"
+import { Module, State } from "vuex-simple"
 
 import { ReviewsModule } from "@/store/reviews/reviews.module"
 
@@ -7,8 +7,8 @@ export class RootModule {
 	reviewsModule = new ReviewsModule(this)
 
 	@State()
-	tenantName = "tenant name"
+	tenant: { name: string } = { name: "tenant name" }
 
 	@State()
-	uid = "01"
+	user: { account: { uid: string } } = { account: { uid: "01" } }
 }

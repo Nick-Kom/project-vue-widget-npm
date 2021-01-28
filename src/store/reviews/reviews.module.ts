@@ -27,8 +27,8 @@ export class ReviewsModule {
 
 	@Getter()
 	get getReviewsService() {
-		console.log(this.root.uid, this.root.tenantName)
+		console.log(this.root.user.account.uid, this.root.tenant.name)
 		//return new ReviewsService(this.root.uid, this.root.tenantName)
-		return `${this.root.uid} ${this.root.tenantName}`
+		return ``
 	}
 }

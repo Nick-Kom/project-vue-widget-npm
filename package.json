@@ -1,6 +1,6 @@
 {
 	"name": "project-vue-widget-npm",
-	"version": "0.3.0",
+	"version": "0.3.1",
 	"private": false,
 	"description": "test npm package with custom element widget",
 	"author": "Nick Kom",
